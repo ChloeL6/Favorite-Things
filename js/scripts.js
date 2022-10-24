@@ -1,10 +1,15 @@
+function getData(event) {
+  event.preventDefault();
+  const first = document.getElementById("first").value;
+  const second = document.getElementById("second").value;
+  const last = document.getElementById("last").value;
+
+  let array = document.createElement("p");
+  array.append(first,",", second,",", last);
+  document.body.append(array);
+}
+
 window.addEventListener("load", function() {
-const first = document.getElementById("first").value;
-const second = document.getElementById("second").value;
-const last = document.getElementById("last").value;
-
-const array = (first, second, last);
-
-
+  document.getElementById("form").addEventListener("submit", getData);
 
 });
