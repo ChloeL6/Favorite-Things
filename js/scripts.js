@@ -7,6 +7,8 @@ function getData(event) {
   let array = document.createElement("p");
   array.append(first,",", second,",", last);
   document.body.append(array);
+
+  document.getElementById("outPut").removeAttribute("class");
 }
 
 window.addEventListener("load", function() {
